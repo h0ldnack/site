@@ -14,6 +14,7 @@
           background-color: black;
           color: white;
       }
+      p { line-height: 1.5; }
       a { font-size: 12px; }
       .container {
           display: flex;
@@ -24,47 +25,63 @@
       }
       .container-element {
           font-size: 13px;
-          flex: 120px;
-          width: 45px;
-          padding: 1vh;
-          height: 2vh;
           font-weight: bold;
       }
       /*1440p and up*/
       @media only screen and (min-width: 1440px) {
           body { margin: 3% 40%; }
           .container {
-              background-color: purple;
-              width: 500px;
+              /*background-color: purple;*/
+              width: 22vw;
           }
-          .container-element {}
+          .container-element {
+              flex: 120px;
+              width: 45px;
+              padding: 1vh;
+              height: 2vh;
+          }
       }
       /*1080p to 1440p*/
       @media only screen and (min-width: 1080px) and (max-width: 1439px) {
           body { margin: 3% 30%; }
           .container {
-              background-color: red;
-              width: 500px;
+              /*background-color: red;*/
+              width: 45vw;
           }
-          .container-element {}
+          .container-element {
+              flex: 120px;
+              width: 45px;
+              padding: 1vh;
+              height: 2vh;
+          }
       }
       /*Between 1080p and 420p*/
       @media only screen and (min-width: 721px) and (max-width: 1079px) {
           body { margin: 3% 26%; }
           .container {
-              background-color: blue;
-              width: 500px;
+              /*background-color: blue;*/
+              width: 53vw;
           }
-          .container-element {}
+          .container-element {
+              flex: 120px;
+              width: 45px;
+              padding: 1vh;
+              height: 2vh;
+          }
       }
       /*Below 520p*/
       @media only screen and (max-width: 720px) {
           body { margin: 3% 10%; }
           .container {
-              background-color: green;
-              width: 500px;
+              /*background-color: green;*/
+              width: 80vw;
           }
-          .container-element {}
+          .container-element {
+              flex: 120px;
+              width: 45px;
+              padding: 1vh;
+              height: 2vh;
+          }
       }
       .feet-pic {
           width: 100%;
@@ -73,6 +90,7 @@
       ul {
           padding-left: 15px;
       }
+      li { padding: 0.5%; }
     </style>
   </head>
   <body>
