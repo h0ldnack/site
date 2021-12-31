@@ -19,19 +19,31 @@
       p { }
       a { font-size: 12px; }
       .container {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          display: flex;
+          width: 500px;
+          flex-flow: row wrap;
+          /*flex-wrap: wrap;
+          flex-direction: column;*/
+          justify-content: space-around;
+          /*grid-template-columns: repeat(2, 1fr);
           gap: 1px;
-          grid-auto-rows: minmax(20px, auto);
+          grid-auto-rows: minmax(20px, auto);*/
       }
       .container-element {
-          display: inline-grid;
+          /*display: inline-grid;*/
           font-size: 13px;
+          flex: 128px;
+          width: 50px;
+          padding: 1vh;
+          height: 2.1vh;
           font-weight: bold;
       }
       .feet-pic {
-              width: 100%;
-              height: auto;
+          width: 100%;
+          height: auto;
+      }
+      ul {
+          padding-left: 15px;
       }
     </style>
   </head>
