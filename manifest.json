@@ -1,0 +1,22 @@
+{
+
+    "name": "Holdnack.net",
+    "short_name": "Holdnack.net",
+    "start_url": "./index.html",
+    "display": "minimal-ui",
+    "background_color": "#ffffff",
+    "description": "A personal site for a person",
+    
+    "icons": [
+        {
+            "src": "i/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "i/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

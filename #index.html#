@@ -10,6 +10,23 @@
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/x-icon" href="/i/favicon.ico">
   <!--<script type="module" src="/service-worker.js"></script>-->
+  <script type="module">
+   if ('serviceWorker' in navigator) {
+       window.addEventListener('load', () => {
+           navigator.serviceWorker.register('/worker.js', {
+               scope: '/'
+           })
+                    .then((registration) => {
+                        console.log('Service Worker registration completed with scope: ',
+                                    registration.scope)
+                    }, (err) => {
+                        console.log('Service Worker registration failed', err)
+                    })
+       })
+   } else {
+       console.log('Service Workers not supported')
+   }
+  </script>
 </HEAD>
 <BODY>
   <H1>Howdy Folks!</H1>
@@ -43,8 +60,6 @@ Property</A> | The book that saved my life</LI>
 <LI><A href="https://bxscience.edu/ourpages/auto/2019/2/28/69275970/The%20Stranger%20-%20Albert%20Camus.pdf">The
 Stranger</A> | The other book that saved my life</LI>
 <LI><A href="https://en.wikipedia.org/wiki/Dune_(novel)">Dune</A> | Its the last fiction book I finished</LI>
-<li><a href="https://www.organism.earth/library/document/tao-te-ching">Tao Te Ching</a> | There is no way I can't recommend it
-</li>
 </UL>
 <H3>Music</H3>
 <UL>
