@@ -30,7 +30,7 @@
     <ul>
       <li><div>Rclone+My Own Script</div></li>
       <li><div>ZFS</div></li>
-      <li><div>BorkBackup</div></li>
+      <li><div>BorgBackup</div></li>
     </ul>
     <h4>Providers</h4>
     <ul>
@@ -67,6 +67,18 @@
   </section>
   <section>
     <h3>My Solution</h3>
+    <h4>Main</h4>
+    <p>
+      I use BorgBackup to Rsync.net.
+      I am shocked by the amount compression and deduplication reduces storage space used.
+      I had around 40 GB raw data, and it shrinks down to 7 GB actually stored.
+      I am still working out some kinks in my script.
+      Sometimes Borg just hangs on a file and I have no idea why.
+      I noticed it on a plain text config file.
+      It also seems to have issues with large folders, for example my home dir.
+      And I do have excludes for local caches and the like.
+      I get around it for now with more granular archives.
+    </p>
     <h4>Local NAS</h4>
     <p>
       I don't currently have a NAS, because I am moving and I don't want more stuff that I need to shuffle around.
@@ -79,6 +91,7 @@
     <p>
       The main reason is to save my own bandwidth.
       They will also have much more throughput then me.
+      They have s3cmd installed locally as well, and I imagine that can interface with B2 just fine.
     </p>
   </section>
 </body>
